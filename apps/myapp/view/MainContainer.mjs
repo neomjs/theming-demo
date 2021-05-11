@@ -1,8 +1,8 @@
-import BlueButton   from './BlueButton.mjs';
-import Component    from '../../../node_modules/neo.mjs/src/component/Base.mjs';
-import RedToolbar   from './RedToolbar.mjs';
-import TabContainer from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
-import Viewport     from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
+import BlueButton        from './BlueButton.mjs';
+import NeumorphicToolbar from './NeumorphicToolbar.mjs';
+import RedToolbar        from './RedToolbar.mjs';
+import TabContainer      from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
+import Viewport          from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
 
 /**
  * @class MyApp.view.MainContainer
@@ -25,7 +25,7 @@ class MainContainer extends Viewport {
                 layout: {ntype: 'vbox', align: 'stretch'},
 
                 items: [{
-                    module: RedToolbar,
+                    module: NeumorphicToolbar,
                     flex  : 'none',
                     items : [{
                         text: 'Normal Button'
