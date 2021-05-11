@@ -12,7 +12,7 @@ class NeumorphicToolbar extends Toolbar {
          */
         className: 'MyApp.view.NeumorphicToolbar',
         /**
-         * @member {String[]} cls=['neo-red-toolbar','neo-toolbar']
+         * @member {String[]} cls=['neumorphic','neo-toolbar']
          */
         cls: ['neumorphic-toolbar', 'neo-toolbar']
     }}

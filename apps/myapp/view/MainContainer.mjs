@@ -1,4 +1,5 @@
 import BlueButton        from './BlueButton.mjs';
+import NeumorphicButton  from './NeumorphicButton.mjs';
 import NeumorphicToolbar from './NeumorphicToolbar.mjs';
 import RedToolbar        from './RedToolbar.mjs';
 import TabContainer      from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
@@ -27,15 +28,13 @@ class MainContainer extends Viewport {
                 items: [{
                     module: NeumorphicToolbar,
                     flex  : 'none',
-                    items : [{
-                        text: 'Normal Button'
-                    }, '->', {
-                        module: BlueButton,
+                    items : ['->', {
+                        module: NeumorphicButton,
                         text  : 'Button 1'
                     }, {
-                        module: BlueButton,
+                        module: NeumorphicButton,
                         text  : 'Button 2',
-                        style : {marginLeft: '.5em'}
+                        style : {marginLeft: '2em'}
                     }]
                 }, {
                     ntype: 'container',
