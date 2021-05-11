@@ -10,7 +10,11 @@ class RedToolbar extends Toolbar {
          * @member {String} className='MyApp.view.RedToolbar'
          * @protected
          */
-        className: 'MyApp.view.RedToolbar'
+        className: 'MyApp.view.RedToolbar',
+        /**
+         * @member {String[]} cls=['neo-red-toolbar','neo-toolbar']
+         */
+        cls: ['neo-red-toolbar', 'neo-toolbar']
     }}
 }
 
