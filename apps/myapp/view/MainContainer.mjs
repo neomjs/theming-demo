@@ -1,4 +1,5 @@
 import Component    from '../../../node_modules/neo.mjs/src/component/Base.mjs';
+import RedToolbar   from './RedToolbar.mjs';
 import TabContainer from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
 import Viewport     from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
 
@@ -18,19 +19,32 @@ class MainContainer extends Viewport {
             width : 500,
             style : {flex: 'none', margin: '20px'},
 
-            itemDefaults: {
-                module: Component,
-                cls   : ['neo-examples-tab-component'],
-                style : {padding: '20px'},
-            },
-
             items: [{
+                ntype : 'container',
+                layout: {ntype: 'vbox', align: 'stretch'},
+
+                items: [{
+                    module: RedToolbar,
+                    flex  : 'none',
+                    items : ['->', {
+                        text: 'button 1'
+                    }, {
+                        text : 'button 2',
+                        style: {marginLeft: '.5em'}
+                    }]
+                }, {
+                    ntype: 'container',
+                    flex : 1
+                }],
+
                 tabButtonConfig: {
                     iconCls: 'fa fa-home',
                     text   : 'Tab 1'
-                },
-                vdom: {innerHTML: 'Welcome to your new Neo App.'}
+                }
             }, {
+                module: Component,
+                cls   : ['neo-examples-tab-component'],
+                style : {padding: '20px'},
                 tabButtonConfig: {
                     iconCls: 'fa fa-play-circle',
                     text   : 'Tab 2'
