@@ -1,3 +1,4 @@
+import BlueButton   from './BlueButton.mjs';
 import Component    from '../../../node_modules/neo.mjs/src/component/Base.mjs';
 import RedToolbar   from './RedToolbar.mjs';
 import TabContainer from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
@@ -26,11 +27,15 @@ class MainContainer extends Viewport {
                 items: [{
                     module: RedToolbar,
                     flex  : 'none',
-                    items : ['->', {
-                        text: 'button 1'
+                    items : [{
+                        text: 'Normal Button'
+                    }, '->', {
+                        module: BlueButton,
+                        text  : 'Button 1'
                     }, {
-                        text : 'button 2',
-                        style: {marginLeft: '.5em'}
+                        module: BlueButton,
+                        text  : 'Button 2',
+                        style : {marginLeft: '.5em'}
                     }]
                 }, {
                     ntype: 'container',
