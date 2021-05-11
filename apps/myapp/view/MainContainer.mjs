@@ -32,9 +32,9 @@ class MainContainer extends Viewport {
                         module: NeumorphicButton,
                         text  : 'Auto'
                     }, {
-                        module: NeumorphicButton,
-                        text  : 'Blog',
-                        style : {marginLeft: '1em'}
+                        module : NeumorphicButton,
+                        iconCls: 'fa fa-home',
+                        style  : {marginLeft: '1em'}
                     }]
                 }, {
                     ntype: 'container',
