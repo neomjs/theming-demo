@@ -1,0 +1,9 @@
+$neoMap: map-merge($neoMap, (
+    'redtoolbar-background-color': firebrick
+));
+
+@if $useCssVars == true {
+    :root .neo-theme-light { // .neo-red-toolbar
+        --redtoolbar-background-color: #{neo(redtoolbar-background-color)};
+    }
+}
