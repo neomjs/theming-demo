@@ -30,11 +30,11 @@ class MainContainer extends Viewport {
                     flex  : 'none',
                     items : ['->', {
                         module: NeumorphicButton,
-                        text  : 'Button 1'
+                        text  : 'Auto'
                     }, {
                         module: NeumorphicButton,
-                        text  : 'Button 2',
-                        style : {marginLeft: '2em'}
+                        text  : 'Blog',
+                        style : {marginLeft: '1em'}
                     }]
                 }, {
                     ntype: 'container',
