@@ -16,8 +16,8 @@ class MainContainer extends Viewport {
 
         items: [{
             module: TabContainer,
-            height: 300,
-            width : 500,
+            height: 600,
+            width : 800,
             style : {flex: 'none', margin: '20px'},
 
             items: [{
@@ -47,14 +47,31 @@ class MainContainer extends Viewport {
                     text   : 'Tab 1'
                 }
             }, {
-                module: Component,
-                cls   : ['neo-examples-tab-component'],
-                style : {padding: '20px'},
+                ntype : 'container',
+                layout: {ntype: 'vbox', align: 'stretch'},
+
+                items: [{
+                    module: RedToolbar,
+                    flex  : 'none',
+                    items : [{
+                        text: 'Normal Button'
+                    }, '->', {
+                        module: BlueButton,
+                        text  : 'Button 1'
+                    }, {
+                        module: BlueButton,
+                        text  : 'Button 2',
+                        style : {marginLeft: '.5em'}
+                    }]
+                }, {
+                    ntype: 'container',
+                    flex : 1
+                }],
+
                 tabButtonConfig: {
                     iconCls: 'fa fa-play-circle',
                     text   : 'Tab 2'
-                },
-                vdom: {innerHTML: 'Have fun creating something awesome!'}
+                }
             }]
         }]
     }}
