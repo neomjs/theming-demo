@@ -1,5 +1,5 @@
 import BlueButton        from './BlueButton.mjs';
-import NeumorphicButton  from './NeumorphicButton.mjs';
+import NeumorphicButton  from '../../../src/button/Neumorphic.mjs';
 import NeumorphicToolbar from './NeumorphicToolbar.mjs';
 import RedToolbar        from './RedToolbar.mjs';
 import TabContainer      from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
