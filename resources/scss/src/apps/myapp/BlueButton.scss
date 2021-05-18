@@ -1,4 +1,12 @@
 .neo-blue-button {
     background-color: steelblue;
-    color           : white;
+    border-color    : #1c60a0;
+
+    &:hover {
+        background-color: royalblue;
+    }
+
+    .neo-button-text {
+        color: #fff;
+    }
 }
