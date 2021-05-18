@@ -1,18 +1,18 @@
-import Toolbar from '../../../node_modules/neo.mjs/src/container/Toolbar.mjs';
+import Toolbar from '../../node_modules/neo.mjs/src/container/Toolbar.mjs';
 
 /**
- * @class MyApp.view.NeumorphicToolbar
+ * @class Neo.container.NeumorphicToolbar
  * @extends Neo.container.Toolbar
  */
 class NeumorphicToolbar extends Toolbar {
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.view.NeumorphicToolbar'
+         * @member {String} className='Neo.container.NeumorphicToolbar'
          * @protected
          */
-        className: 'MyApp.view.NeumorphicToolbar',
+        className: 'Neo.container.NeumorphicToolbar',
         /**
-         * @member {String[]} cls=['neumorphic','neo-toolbar']
+         * @member {String[]} cls=['neumorphic-toolbar','neo-toolbar']
          */
         cls: ['neumorphic-toolbar', 'neo-toolbar']
     }}
