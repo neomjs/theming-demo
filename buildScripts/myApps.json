@@ -28,6 +28,12 @@
             "output": "/apps/myapp/",
             "title": "MyApp",
             "mainThreadAddons": "'DragDrop', 'Stylesheet'"
+        },
+        "MyApp2": {
+            "input": "./apps/myapp2/app.mjs",
+            "output": "/apps/myapp2/",
+            "title": "MyApp2",
+            "mainThreadAddons": "'DragDrop', 'Stylesheet'"
         }
     }
 }
