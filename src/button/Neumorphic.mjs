@@ -12,7 +12,7 @@ class Neumorphic extends Button {
          */
         className: 'Neo.button.Neumorphic',
         /**
-         * @member {String[]} cls=['neo-red-toolbar','neo-toolbar']
+         * @member {String[]} cls=['neumorphic-button','neo-button']
          */
         cls: ['neumorphic-button', 'neo-button']
     }}
