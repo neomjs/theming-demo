@@ -2,7 +2,7 @@ import Button from '../../../node_modules/neo.mjs/src/button/Base.mjs';
 
 /**
  * @class MyApp.view.BlueButton
- * @extends Neo.container.Toolbar
+ * @extends Neo.button.Base
  */
 class BlueButton extends Button {
     static getConfig() {return {
@@ -12,7 +12,7 @@ class BlueButton extends Button {
          */
         className: 'MyApp.view.BlueButton',
         /**
-         * @member {String[]} cls=['neo-red-toolbar','neo-toolbar']
+         * @member {String[]} cls=['neo-blue-button','neo-button']
          */
         cls: ['neo-blue-button', 'neo-button']
     }}
