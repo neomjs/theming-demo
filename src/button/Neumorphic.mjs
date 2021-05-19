@@ -2,7 +2,7 @@ import Button from '../../node_modules/neo.mjs/src/button/Base.mjs';
 
 /**
  * @class Neo.button.Neumorphic
- * @extends Neo.container.Toolbar
+ * @extends Neo.button.Base
  */
 class Neumorphic extends Button {
     static getConfig() {return {
